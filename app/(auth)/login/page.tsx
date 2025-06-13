@@ -14,7 +14,7 @@ export default function Page() {
   const router = useRouter();
 
   const [email, setEmail] = useState('');
-  const [isSuccessful, setIsSuccessful] = useState(false);
+  const [isSuccessful, setIsSuccessful] = useState(true);
 
   const [state, formAction] = useActionState<LoginActionState, FormData>(
     login,
